@@ -26,4 +26,4 @@ class Button:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if pygame.mouse.get_pressed()[0]:
                 if self.rect.collidepoint(x, y):
-                    return
+                    pygame.quit()
